@@ -1,0 +1,3 @@
+cd ./rpi2023fall-pub
+git pull
+cd ..
