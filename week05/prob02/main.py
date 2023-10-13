@@ -1,3 +1,7 @@
-#! /usr/bin/env python3
+def power(a,n):
+    an = a
+    for i in range(1,n-1):
+        an = a*
+    return an
 
-# 遞迴
+print(power(int(input()),int(input())))

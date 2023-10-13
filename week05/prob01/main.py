@@ -8,5 +8,3 @@ d = math.sqrt((x2 - x1)**2 + (y2 - y1)**2 + (z2 - z1)**2)
 d = round(d, 2)
 
 print(d)
-
-
