@@ -6,11 +6,7 @@ def mysort(dat):
     # write your code here
     #---------------------- 
     num_list = [int(num) for num in dat.split()]
-
-    # Sort the list of integers
     num_list.sort()
-
-    # Join the sorted integers into a string
     sorted_dat = ' '.join(map(str, num_list))
 
     return sorted_dat
