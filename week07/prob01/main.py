@@ -7,10 +7,8 @@ def sign_pairs(numbers):
     #---------------------- 
     num_list = [int(num) for num in numbers.split()]
 
-    # Initialize an empty list to store adjacent pairs with the same sign
     result = []
 
-    # Iterate through the list to find adjacent pairs
     for i in range(len(num_list) - 1):
         if (num_list[i] > 0 and num_list[i + 1] > 0) or (num_list[i] < 0 and num_list[i + 1] < 0):
             result.append([num_list[i], num_list[i + 1]])
