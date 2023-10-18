@@ -6,18 +6,18 @@ def findCh(istr, ch):
     first = None
     last = None
 
-    for i in range(len(istr)):
-        if istr[i] == ch:
+    for i, char in enumerate(istr):
+        if char == ch:
             if first is None:
                 first = i
             last = i
 
-    if first is None:
-        return None
-    elif first == last:
-        return first
+    if first is not None and first != last:
+        return f"{first} {last}"
+    elif first is not None and first == last:
+        return int(first)
     else:
-        return (first, last)
+        return None
 
 # --------------------------------------------------------------------
 # The following code is intended for your personal testing purposes. 

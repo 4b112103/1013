@@ -4,8 +4,6 @@ def find3rd(istr, ch):
     pass
     # Write your code here!
     count = 0
-
-    count = 0
     for i, char in enumerate(istr):
         if char == ch:
             count += 1
