@@ -5,7 +5,20 @@ def sign_pairs(numbers):
     #---------------------- 
     # write your code here
     #---------------------- 
+    num_list = [int(num) for num in numbers.split()]
 
+    result = []
+
+    i = 0
+    while i < len(num_list) - 1:
+        pair = [num_list[i], num_list[i + 1]]
+        if (pair[0] > 0 and pair[1] > 0) or (pair[0] < 0 and pair[1] < 0):
+            result.append(pair)
+            i += 2  
+        else:
+            i += 1
+
+    return result
 
 #---------------------------------------------------------------------
 # you can modify the following to test your code more thoroughly
