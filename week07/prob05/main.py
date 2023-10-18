@@ -5,7 +5,14 @@ def mysort(dat, start, end):
     #---------------------- 
     # write your code here
     #---------------------- 
+    num_list = [int(num) for num in dat.split()]
+    if start >= end or start < 0 or end > len(num_list):
+        return dat
 
+    sorted_range = sorted(num_list[start:end])
+    num_list[start:end] = sorted_range
+    sorted_dat = ' '.join(map(str, num_list))
+    return sorted_dat
 #---------------------------------------------------------------------
 # you can modify the following to test your code more thoroughly
 #---------------------------------------------------------------------

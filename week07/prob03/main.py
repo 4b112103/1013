@@ -5,7 +5,17 @@ def count_unique(numstr):
     #---------------------- 
     # write your code here
     #---------------------- 
+    num_list = [int(num) for num in numstr.split()]
 
+    unique_count = {}
+    count = 0
+
+    for num in num_list:
+        if num not in unique_count:
+            unique_count[num] = 1
+            count += 1
+
+    return count
 #---------------------------------------------------------------------
 # you can modify the following to test your code more thoroughly
 #---------------------------------------------------------------------
