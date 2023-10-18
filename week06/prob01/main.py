@@ -3,6 +3,21 @@
 def findCh(istr, ch):
     pass
     # Write your code here!
+    first = None
+    last = None
+
+    for i in range(len(istr)):
+        if istr[i] == ch:
+            if first is None:
+                first = i
+            last = i
+
+    if first is None:
+        return None
+    elif first == last:
+        return first
+    else:
+        return (first, last)
 
 # --------------------------------------------------------------------
 # The following code is intended for your personal testing purposes. 

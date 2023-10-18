@@ -3,6 +3,19 @@
 def find3rd(istr, ch):
     pass
     # Write your code here!
+    count = 0
+
+    count = 0
+    for i, char in enumerate(istr):
+        if char == ch:
+            count += 1
+            if count == 3:
+                return i
+    if count == 0:
+        return -2
+    else:
+        return -1
+
 
 # --------------------------------------------------------------------
 # The following code is intended for your personal testing purposes. 

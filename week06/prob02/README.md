@@ -6,7 +6,6 @@ Given a string that may or may not contain the letter of interest, please return
 ```python
 def find3rd(istr, ch):
     # write your code here
-
 data = [
     ("hello world, welcome to programming!", "o"),
     ("The quick brown fox jumps over the lazy dog", "x"),
