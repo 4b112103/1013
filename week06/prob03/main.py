@@ -3,6 +3,9 @@
 def capEachWord(istr):
     pass
     # Write your code here!
+    words = istr.split()  # Split the input string into words
+    capitalized_words = [word.capitalize() for word in words]  # Capitalize the initial letter of each word
+    return ' '.join(capitalized_words)  # Join the capitalized words back into a string
 
 # --------------------------------------------------------------------
 # The following code is intended for your personal testing purposes. 
